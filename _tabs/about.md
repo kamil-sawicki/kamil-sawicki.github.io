@@ -4,5 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+OSCE³-certified cybersecurity practitioner focused on offensive security, web security, and exploit development.
+
+I write about pentesting, vulnerability research, labs, certifications, and practical lessons from the field.

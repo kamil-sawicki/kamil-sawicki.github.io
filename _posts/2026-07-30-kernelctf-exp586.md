@@ -64,6 +64,8 @@ After a manual correction, my result changed to:
 vuln dupe of exp544
 ```
 
+![Public kernelCTF spreadsheet showing exp586 classified as a vulnerability duplicate of exp544](/commons/exp586.png)
+
 The same vulnerability cannot be reused on the latest LTS target, even after the kernel version changes. The winning slot therefore went back to `exp558`.
 
 ## What was left

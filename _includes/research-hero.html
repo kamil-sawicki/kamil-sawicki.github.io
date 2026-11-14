@@ -1,0 +1,16 @@
+<section class="research-hero" aria-labelledby="research-title">
+  <img
+    class="research-banner"
+    src="{{ site.profile_banner | relative_url }}"
+    alt=""
+    width="1500"
+    height="500"
+    fetchpriority="high"
+  >
+  <div class="research-hero-content">
+    <p class="research-eyebrow">{{ site.tagline }}</p>
+    <h1 id="research-title">{{ site.title }}</h1>
+    <p class="research-intro">Vulnerability research. Exploit development.<br>Notes from the offensive side of security.</p>
+    <a class="research-hero-link" href="{{ '/about/' | relative_url }}">About me <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

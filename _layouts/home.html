@@ -46,6 +46,15 @@ layout: default
   {% endfor %}
 {% endif %}
 
+<div class="research-section-heading">
+  {% if paginator.page > 1 %}
+    <h1>Research &amp; disclosures</h1>
+  {% else %}
+    <h2>Research &amp; disclosures</h2>
+  {% endif %}
+  <span class="research-entry-count">{{ site.posts.size }} entries</span>
+</div>
+
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts %}
     <article class="card-wrapper card">
@@ -94,7 +103,20 @@ layout: default
 
         <div class="col-md-{{ card_body_col }}">
           <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+            <span class="research-post-kind">
+              {% if post.categories contains 'cve' %}
+                CVE advisory
+              {% elsif post.categories contains 'advisory' %}
+                Security advisory
+              {% else %}
+                Research notes
+              {% endif %}
+            </span>
+            {% if paginator.page > 1 %}
+              <h2 class="card-title my-2 mt-md-0">{{ post.title }}</h2>
+            {% else %}
+              <h3 class="card-title my-2 mt-md-0">{{ post.title }}</h3>
+            {% endif %}
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-summary.html %}</p>
@@ -124,6 +146,7 @@ layout: default
                   <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
                 </div>
               {% endif %}
+              <span class="research-post-arrow" aria-hidden="true">↗</span>
             </div>
             <!-- .post-meta -->
           </div>

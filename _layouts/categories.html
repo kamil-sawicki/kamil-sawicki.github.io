@@ -85,6 +85,7 @@ layout: page
             href="#{{ LIST_PREFIX }}{{ group_index }}"
             data-bs-toggle="collapse"
             aria-expanded="true"
+            aria-controls="{{ LIST_PREFIX }}{{ group_index }}"
             aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
             class="category-trigger hide-border-bottom"
           >
@@ -100,7 +101,7 @@ layout: page
 
       <!-- Sub-categories -->
       {% if sub_categories_size > 0 %}
-        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+        <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show">
           <ul class="list-group">
             {% for sub_category in sub_categories %}
               <li class="list-group-item">

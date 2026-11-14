@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-`CEH` `OSCP` `CWEE` `CPTS` `OSWE` `OSEP` `OSED` `OSCE3`
+`CEH` `OSCP` `OSAI` `CWEE` `CPTS` `OSWE` `OSEP` `OSED` `OSCE3`
 
 OSCE³-certified cybersecurity practitioner focused on offensive security, web security, and exploit development.
 
